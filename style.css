@@ -1,0 +1,550 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(37, 38, 38);
+}
+.container {
+  display: flex;
+  justify-content: center;   /* จัดให้อยู่กึ่งกลางแนวนอน */
+  align-items: start;       /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  width: 100vw;              /* กว้างเต็มหน้าจอ */
+  height: 100vh;             /* สูงเต็มหน้าจอ */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;          /* ป้องกัน scroll bar */
+}
+
+.content {
+  text-align: center;
+  max-width: 100%;         /* จำกัดความกว้างของเนื้อหา */
+  padding: 20px;            /* ให้มีพื้นที่รอบข้อความ */
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+::selection {
+  color: #000000;
+  background: rgb(255, 255, 255);
+}
+
+.shadow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(28, 18, 18, 0.302);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out; /* การเคลื่อนไหวที่สมูท */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* เพิ่มเงาที่ดูสมจริง */
+  z-index: 1;
+}
+.shadow-small {
+  transform: scale(0.5);
+}
+
+.shadow-large {
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes ZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.ZoomIn {
+  opacity: 0;
+  animation: ZoomIn ease 1s forwards;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease 2s forwards;
+}
+
+a {
+    text-decoration:none;
+ }
+  h1 {
+    font-size: 70px;
+    text-align: left;
+    background: linear-gradient(90deg, rgba(14,245,255,1) 0%, rgba(255,255,255,1) 38%, rgba(0,206,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+    font-family: "K2D", sans-serif;
+    font-weight: 600;
+    z-index: 10;
+  }  
+  h2 {
+    font-size: 45px;
+    text-align: Left;
+    color: #ffffffc6;
+    line-height: 2;
+    letter-spacing: 4px;
+    font-family: "K2D", sans-serif;
+    font-weight: 500;
+    z-index: -1;
+  }  
+  h3{
+    font-size: 50px;
+    text-align: left;
+    background: linear-gradient(90deg, rgba(223, 246, 247, 0.878) 0%, rgba(125, 229, 255, 0.807) 38%, rgb(123, 229, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+    font-family: "K2D", sans-serif;
+    font-weight: 600;
+    z-index: 10;
+    margin-left: 300px;
+    margin-top: 80px;
+  }
+  h4{
+    font-size: 30px;
+    text-align: left;
+    color: #ffffffc6;
+    letter-spacing: 4px;
+    font-family: "K2D", sans-serif;
+    font-weight: 600;
+    z-index: 10;
+    margin-left: 300px;
+  }
+  .imglogo{
+    width: 50px; height: 50px; margin-left: -12px; margin-top: -10px;
+  }
+  svg{
+    margin-top: 80px; margin-Left: -30px;
+}
+  .Whoami{
+    font-size: 14px;
+    text-align: left;
+    color: #ffffff; font-family: K2D;
+    margin-top: 70px;
+    margin-left: -10px;
+}
+  .h1B {
+    font-size: 40px;
+    text-align: left;
+    background: linear-gradient(90deg, rgba(168, 238, 255, 0.807) 0%, rgba(223, 246, 247, 0.878) 38%, rgb(110, 226, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+    font-family: "K2D", sans-serif;
+    font-weight: 600;
+    z-index: 10;
+    margin-top: 50px; 
+    margin-left: 300px;
+  }  
+  .my-text {
+    word-wrap: break-word;
+    width: 900px;
+    margin-left: 300px; 
+    font-size: 18px; 
+    text-align: left; 
+    color: #ffffff; 
+    font-family: K2D; 
+    font-weight: 300; 
+    margin-top: 30px;
+}
+  
+  ol {
+    justify-content: center;   /* จัดให้อยู่กึ่งกลางแนวนอน */
+    align-items: flex-start;       /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 1550px;         /* จำกัดความกว้างของเนื้อหา */
+    padding: 0px;            /* ให้มีพื้นที่รอบข้อความ */
+    }   
+  ul {
+    list-style-type: none;
+    margin: 0;
+    background-color: rgb(37, 38, 38);
+    padding: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid #e2e8f02a;
+    }       
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 18px 20px;
+text-decoration: none;
+background-color: rgb(37, 38, 38);
+font-family: "K2D", sans-serif;
+font-weight: 600;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+.active {
+background: -webkit-linear-gradient(#0099ff, #ffffff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .card-container {
+        display: flex;
+        gap: 40px;
+        background-color: #EAF2FF;
+    }
+
+    .card {
+        margin-top:3%;
+        margin-left: 3%;
+        width: 340px;
+        height: 400px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .card-header {
+        position: relative;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .card-header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .card-body {
+        padding: 40px;
+    }
+
+    .date {
+        display: block;
+        font-size: 0.9rem;
+        color: #3578E5;
+        margin-bottom: 5px;
+        background: #EAF2FF;
+        padding: 5px 10px;
+        border-radius: 10px;
+        width: fit-content;
+    }
+    .dateNote {
+      display: block;
+      font-size: 1rem;
+      color: #ffffffbc;
+      margin-bottom: 5px;
+      padding: 5px 10px;
+      width: fit-content;
+      margin-left: 290px;
+      font-family: "K2D", sans-serif;
+      font-weight: 600;
+      z-index: 10;
+      margin-top: -10px;
+  }
+
+    .title {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .desc {
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    /* Special 2024 Card */
+    .year-2025 {
+        position: relative;
+        font-size: 5rem;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    .year-2025 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .card {
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 0;
+    }
+
+    .card.show {
+        opacity: 1;
+    }
+
+    .hidden-text {
+        opacity: 0;
+    }
+    .hidden-text.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .cursor {
+        width: 40px;
+        height: 40px;
+        border: 2px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 0;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: transform 0.2s ease-out, background 0.3s, border-radius 0.3s;
+        z-index: 10;
+    }
+    .Learnmore {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px;
+        width: 13%;
+        margin-top: 10px;
+        margin-left: 3%;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+        border: 2px solid white;
+        border-radius: 100px;
+        background: #55ACEE;
+        font-family: "K2D", sans-serif;
+        font-weight: 600;
+        transition: opacity 2s ease-out, transform 2s ease-out;
+    }
+    .Learnmore:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+    }
+    .image-container:hover img {
+        transform: scale(1.1);
+    }
+    .image-container:hover ~ .cursor {
+        background: rgba(255, 255, 255, 0.2);
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+    }
+
+      .icon-bar {
+        position: fixed;
+        top: 70%;
+        left: 0%;
+        transform: translateY(-50%);
+        z-index: 10;
+      }
+      .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 4px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+        border-radius: 100px;
+      }
+      .icon-bar a:hover {
+        background-color: #000;
+      }
+      .facebook {
+        background: #3B5998;
+        color: white;
+      }
+      .twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      .google {
+        background: #dd4b39;
+        color: white;
+      }
+      .instragram{
+        background: #dd39bc;
+        color: white;
+      }
+      .linkedin {
+        background: #007bb5;
+        color: white;
+      }
+      .youtube {
+        background: #bb0000;
+        color: white;
+      }
+
+      .BackGroundLogo {
+        margin-top:-300px;
+        margin-left: 950px;
+        height: 400px;
+        width: 400px;
+        float:left;
+      }
+
+      .selection1 {
+        margin-top:0;
+        background-color:rgb(37, 38, 38);
+        height: 100px;
+        width: 100%;
+      }
+      .selection2 {
+        margin-top:300px;
+        height:500px;
+        width: 100%;
+        display: flex;
+        gap: 40px;
+        background-color: #EAF2FF;
+      }
+      .selection3 {
+        height:500px;
+        width: 100%;
+        display: flex;
+        gap: 40px;
+        background-color: rgb(37, 38, 38);
+      }
+
+      .footer {
+        background-color: #222;
+        color: #ccc;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      }
+      
+      .footer p {
+        margin: 10px;
+      }
+
+      /* Container สำหรับ Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Card Style */
+.cardsmall {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+  overflow: hidden;
+}
+
+/* Hover Effect */
+.cardsmall:hover {
+  transform: translateY(-5px);
+}
+
+/* รูปภาพด้านบนของ Card */
+.cardsmall-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+/* วันที่/เวลา */
+.timestamp {
+  color: #7f8c8d;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* ข้อความ preview */
+.excerpt {
+  color: #333;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

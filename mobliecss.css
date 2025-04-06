@@ -1,0 +1,318 @@
+@media (max-width: 768px) {
+    .selection1 {
+        height:5px;
+        width: 100%;
+        gap: 40px;
+        background-color: rgb(37, 38, 38);
+      }
+      .selection2 {
+        height: 1000px;
+        width: 100%;
+        gap: 40px;
+        background-color: #EAF2FF;
+      }
+      .selection3 {
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        gap: 40px;
+        background-color: rgb(37, 38, 38);
+      }
+    ol {
+      width: 100%;
+      padding: 10px;
+    }
+    h1{
+      margin-left: -10px;
+      font-size: 27px;
+      text-align: center;
+      background: linear-gradient(90deg, rgba(14,245,255,1) 0%, rgba(255,255,255,1) 38%, rgba(0,206,255,1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 4px;
+      font-family: "K2D", sans-serif;
+      font-weight: 600;
+      z-index: 10;
+    }
+    h2 {
+      margin-left: -10px;
+      margin-top: 10px;
+      font-size: 15px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.775);
+      line-height: 2;
+      letter-spacing: 4px;
+      font-family: "K2D", sans-serif;
+      font-weight: 500;
+      z-index: -1;
+    }  
+    h3 {
+        font-size: 30px;
+        text-align: left;
+        background: linear-gradient(90deg, rgba(223, 246, 247, 0.878) 0%, rgba(125, 229, 255, 0.807) 38%, rgb(123, 229, 255) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 4px;
+        font-family: "K2D", sans-serif;
+        font-weight: 600;
+        z-index: 10;
+        margin-top: 80px;
+        margin-left: 30px;
+      }  
+      h4{
+        font-size: 30px;
+        text-align: left;
+        color: #ffffffc6;
+        letter-spacing: 4px;
+        font-family: "K2D", sans-serif;
+        font-weight: 600;
+        z-index: 10;
+        margin-left: 30px;
+      }
+      h5 {
+        font-size: 20px;
+        background: linear-gradient(90deg, rgba(41, 41, 41, 0.878) 0%, rgba(117, 117, 117, 0.848) 38%, rgb(10, 10, 10) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 4px;
+        font-family: "K2D", sans-serif;
+        font-weight: 600;
+        z-index: 10;
+      }  
+      .imglogo{
+        width: 50px; height: 50px; margin-left: -12px; margin-top: -10px;
+      }
+    svg{
+        margin-top: 80px; margin-Left: -30px; background-color: #ffffff; height: 800px; width: 2px;
+    }
+    .Whoami{
+        font-size: 14px;
+        text-align: left;
+        color: #ffffff; font-family: K2D;
+        margin-top: 70px;
+        margin-left: -10px;
+    }
+    .Learnmore {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px;
+      width: 40%;
+      margin-top: 16px;
+      margin-left: 30%;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 80%;
+      border: 2px solid white;
+      border-radius: 100px;
+      background: #55ACEE;
+      font-family: "K2D", sans-serif;
+      font-weight: 600;
+    }
+    .my-text {
+      word-wrap: break-word;
+      width: 300px;
+      margin-left: 35px; 
+      font-size: 15px; 
+      text-align: left; 
+      color: #ffffff; 
+      font-family: K2D; 
+      font-weight: 300; 
+      margin-top: 20px;
+  }
+    .h1B{
+      font-size: 20px;
+      text-align: left;
+      background: linear-gradient(90deg, rgba(168, 238, 255, 0.807) 0%, rgba(223, 246, 247, 0.878) 38%, rgb(110, 226, 255) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 4px;
+      font-family: "K2D", sans-serif;
+      font-weight: 600;
+      z-index: 10;
+      margin-top: 10px; 
+      margin-left: 35px;
+    }
+    .dateNote {
+      display: block;
+      font-size: 0.7rem;
+      color: #ffffffbc;
+      margin-bottom: 5px;
+      padding: 5px 10px;
+      width: fit-content;
+      margin-left: 30px;
+      font-family: "K2D", sans-serif;
+      font-weight: 600;
+      z-index: 10;
+      margin-top: -10px;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    background-color: rgb(37, 38, 38);
+    font-family: "K2D", sans-serif;
+    font-weight: 600;
+    }
+    .card-container {
+    margin-top: 40px;
+      margin-left: -18%;
+      gap: 40px;
+      background-color: #EAF2FF;
+      justify-content: center;   /* จัดให้อยู่กึ่งกลางแนวนอน */
+      align-items: start;       /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+      display: block;
+      margin-bottom: 20px;
+  }
+
+  .card {
+      margin-top:3%;
+      margin-left: 3%;
+      width: 200px;
+      height: 300px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-header {
+      position: relative;
+      height: 180x;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+
+  .card-header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+  }
+  .card-body {
+      padding: 1px;
+  }
+  .date {
+      display: block;
+      font-size: 0.6rem;
+      color: #3578E5;
+      background: #EAF2FF;
+      padding: 5px 20px;
+      border-radius: 10px;
+      width: fit-content;
+      z-index: 10;
+      margin-top: -10px;
+  }
+  .dateNote {
+    display: block;
+    font-size: 0.8rem;
+    color: #ffffffbc;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    width: fit-content;
+    margin-left: 30px;
+    font-family: "K2D", sans-serif;
+    font-weight: 600;
+    z-index: 10;
+    margin-top: -10px;
+}
+
+  .title {
+    width: fit-content;
+    font-size: 0.7rem;
+    display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      z-index: 10;
+  }
+
+  .desc {
+      color: #666;
+      font-size: 0.7rem;
+      z-index: 10;
+  }
+
+  /* Special 2024 Card */
+  .year-2025 {
+      position: relative;
+      font-size: 5rem;
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+  }
+
+  .year-2025 img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 10;
+  }
+
+
+/* Container สำหรับ Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Card Style */
+  .cardsmall {
+    width: 300px;        /* ความกว้างที่แน่นอน */
+    height: 350px;       /* ความสูงที่แน่นอน */
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+  }
+  
+  /* Hover Effect */
+  .cardsmall:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* รูปภาพด้านบนของ Card */
+  .cardsmall-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  
+  /* วันที่/เวลา */
+  .timestamp {
+    color: #7f8c8d;
+    font-size: 12px;
+    margin-top: -10px;
+  }
+  
+  /* ข้อความ preview */
+  .excerpt {
+    margin-top: 5px;
+    color: #333;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  }
